@@ -1,0 +1,93 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>trial</title>
+    	<link  rel="stylesheet" href="try.css">
+    	<link  rel="stylesheet" href="bootstrap.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    	<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+   	</head>
+
+	<body>
+		<div class="row">
+			<div class="images">
+				<div class="col-md-2">
+					<div class="arrowheads" id="left">
+						<img src="left.png" alt="image" class="img-responsive">
+					</div>
+				</div>
+
+				<div class="col-md-8">
+					<div class="image" id="image1">
+						<img src="renderings/24.jpg" class="img-responsive" alt="image24">
+					</div>
+
+					<div class="image" id="image2">
+						<img src="renderings/25.jpg" class="img-responsive" alt="image25">
+					</div>
+
+					<div class="image" id="image3">
+						<img src="renderings/26.jpg" class="img-responsive" alt="image26">
+					</div>
+				</div>
+
+				<div class="col-md-2">
+					<div class="arrowheads" id="right">
+						<img src="right.png" alt="image" class="img-responsive">
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script type="text/javascript">
+			
+			$(document).ready( function() {
+				$("#left").on("click", function() {
+					$("#image1").load("image1");
+				});
+			});
+
+			$(document).ready( function() {
+				$("#left").on("click", function() {
+					$("#image2").load("image2");
+				});
+			});
+
+			$(document).ready( function() {
+				$("#right").on("click", function() {
+					$("#image2").load("image2");
+				});
+			});
+			
+			$(document).ready( function() {
+				$("#left").on("click", function() {
+					$("#image3").load("image3");
+				});
+			});
+
+		</script>
+
+	</body>
+</html>
+
+
+
+<!--div id="topBar">
+    <a href ="#" id="load_home"> HOME </a>
+</div>
+<div id ="content">        
+</div>
+
+<script>
+$(document).ready( function() {
+    $("#load_home").on("click", function() {
+        $("#content").load("content.html");
+    });
+});
+</script>
