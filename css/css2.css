@@ -212,8 +212,13 @@ header , nav , aside , section , article , footer {
     background: #ddd;
 }
 
-.navbar-nav li {
-    margin-left: 15px !important;
+.navbar-nav {
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+}
+
+.nav {
+  padding-left: 0px !important;
 }
 
 #mainNavBarli li {
@@ -283,6 +288,8 @@ header , nav , aside , section , article , footer {
     overflow: auto;
     display: none;
     background-color: #f8f8f8;
+    margin-left: 10px !important;
+    margin-right: 10px !important;
 }
 
 #tab1 {
@@ -300,6 +307,7 @@ li a.active {
     font-size: 13px;
     text-align: left;
     margin-left: auto;
+    padding-left: 2px !important;
 }
 
 #tab1 , #tab2 , #tab4 , #tab5 , #tab6 > h4 {
