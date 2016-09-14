@@ -17,7 +17,7 @@ header , nav , aside , section , article , footer {
 #wrapper {
     border: 1px solid white; 
     text-align: justify;
-    background-color: #f8f8f8 !important;
+    background-color: #1d1d1d !important;
 }
 
 #rowone {
@@ -428,32 +428,59 @@ div.panel.show {
 
 .images {
   position: fixed;
-  left: 25%;
-  top: 50px;
-  opacity: 1;
-  background-color:transparent;
-  width: 50%
-  height: 500px; 
+  top: 0;
+  left: 1px;
+  width: 100%;
+  height: 100%;
+  margin-left: 0px;
+  margin-right: 0px;
   display: block; 
+  opacity: .99;
+  background-color: #1d1d1d;
+  z-index: 1;
 }
 
-#images:hover {
+/*
+.images img:hover {
    width: 150%;
     height: 150%;
-    -webkit-transform: rotate(360deg); /* Safari */
-    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg); /* Safari *
+    transform: rotate(150deg);
+}
+*/
+
+.images > img {
+  position: fixed;
+  top: 10%;
+  margin-left: 25% !important;
+  margin-right: 25% !important;
+  width: 50%;
+  display: block; 
+  opacity: 10 !important;  
+  z-index: 100000;
 }
 
-#image1not , #image2not , #image3not , #image4not , #image5not , #image6not , #image7not , #image8not , #image9not , #image10 ,
-#image11not , #image12not , #image13not , #image14not , #image15not , #image16not , #image17not , #image18not , #image19not , #image20 ,
-#image21not , #image22not , #image23not , #image24not , #image25not , #image26not , #image27not , #image28not , #image29not , #image30 ,
-#image31not , #image32not , #image33not , #image34not , #image35not , #image36not {
-  margin-left: auto;;
-  margin-right: auto;
-  width: auto;
-  height: 500px;
-  display: block;
-  border: 1px solid black;
+.close {
+    position: fixed;
+    top: 10%;
+    display: block; 
+    float: right !important;
+    height: 40px !important;
+    width: 40px !important;
+    opacity: 1 !important;
+    z-index: 100000;
+}
+
+.close img {
+    position: fixed;
+    top: 10%;
+    display: block; 
+    margin-left: 95%;
+    margin-right: 0px;
+    height: 40px !important;
+    width: 40px !important;
+    opacity: 1 !important;
+    z-index: 100000;
 }
 
 #image1 , #image2 , #image3 , #image4 , #image5 , #image6 , #image7 , #image8 , #image9 , #image10 ,
@@ -462,19 +489,6 @@ div.panel.show {
 #image31 , #image32 , #image33 , #image34 , #image35 , #image36 {
   display: none;
 }
-
-.close {
-    float: right;
-    height: 40px;
-    width: 40px;
-    opacity: 1;
-}
-
-
-
-
-
-
 
 /* .images {
     opacity:1;
