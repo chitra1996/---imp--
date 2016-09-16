@@ -306,6 +306,14 @@ header , nav , aside , section , article , footer {
     display: block;
 }
 
+#tab1 p {
+  font-size: 20px;
+  font-family: Quicksand;
+  font-weight: bold;
+  font-style: italic;
+  text-align: center;
+}
+
 .nav > li > a {
   width: 100% !important;
     position: relative;
@@ -330,25 +338,48 @@ li a.active {
     padding-left: auto;
 }
 
-#tab1 , #tab2 , #tab4 , #tab5 , #tab6 > h4 {
+#tab1 , #tab2 , #tab4 , #tab6 > h4 {
     font-family: Lato;
     color: black;
     font-size: 20px;    
     margin-left: auto;
 }
 
-#tab1 , #tab2 , #tab4 , #tab5 , #tab6 > h5 {
+#tab1 , #tab2 , #tab4 , #tab6 > h5 {
     font-family: Lato;
     color: black;
     font-size: 18px;
     margin-left: auto;
 }
 
-#tab1 , #tab2 , #tab4 , #tab5 , #tab6 > h6 {
+#tab1 , #tab2 , #tab4 , #tab6 > h6 {
     font-family: Lato;
     color: black;
     font-size: 16px;i
     margin-left: auto;
+}
+
+#tab5 h1 {
+    font-family: Quicksand;
+    color: #000;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: bolder;
+}
+
+#tab5 h5 {
+    font-family: Quicksand;
+    color: #000;
+    font-size: 18px;
+    font-style: italic;
+    font-weight: normal;
+}
+
+#tab5 h6 {
+    font-family: Quicksand;
+    color: #000;
+    font-size: 16px;
+    font-style: italic;
 }
 
 #tab3 h1 {
@@ -448,7 +479,8 @@ div.panel {
     display: none;
 
     font-family: Quicksand;
-    font-size: 15px;
+    font-size: 18px;
+    font-weight: bold;
     color: #000;
 }
 
