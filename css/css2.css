@@ -14,15 +14,18 @@ header , nav , aside , section , article , footer {
     padding-left: 0px !important;
 }
 
+.navbar-default {
+  margin-top: 20px;
+}
+
 #wrapper {
     text-align: justify;
-    background-color: #1d1d1d !important;
+    background-color: #2C6399 !important;
 }
 
 #rowone {
     padding-top: 5px;
     padding-bottom: 5px;
-    border-bottom: 1px solid black;
     background-color: #fff;
 }
 
@@ -169,7 +172,7 @@ header , nav , aside , section , article , footer {
     cursor: pointer;
     color: #fff;
     border-radius: 5px;
-    padding: 5px 5px;
+    padding: 7px 15px;
     font-family: Lato;
 }
 
@@ -182,13 +185,11 @@ header , nav , aside , section , article , footer {
 #logo1 {
     margin-top: 35px !important;
     margin: auto;
-    border: 1px solid #fff;
 }
 
 #logo2 {
     margin-top: 15px !important;
     margin: auto;
-    border: 1px solid #fff;
 }
 
 #logo1:hover ,#logo2:hover  {
@@ -206,9 +207,9 @@ header , nav , aside , section , article , footer {
 }
 
 #mainNavBarli {
+  background-color: #ddd;
     display: block;
-    width: 100% !important;    
-    background: #ddd;
+    width: 100% !important; 
 }
 
 .navbar-nav {
@@ -220,13 +221,22 @@ header , nav , aside , section , article , footer {
   padding-left: 0px !important;
 }
 
-#mainNavBarli li {
+#mainNavBarli li {     
+    background: #ddd;
     display: block;
     width: 14.2857143%;  /* (100 / numItems)% */
     text-align: center;
-    white-space: nowrap;
     padding-left: auto;
+    padding-right: auto;
 }​
+
+#mainNavBarli a {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: auto;
+  padding-right: auto;
+    white-space: nowrap;
+}
 
 @media (max-width: 767px) {
     #nav li {
@@ -241,6 +251,7 @@ header , nav , aside , section , article , footer {
     position: absolute;
     font-family: Lato;
     font-weight: bold;
+    font-size: 18px;
 }
 
 .button1:hover {
@@ -295,18 +306,28 @@ header , nav , aside , section , article , footer {
     display: block;
 }
 
+.nav > li > a {
+  width: 100% !important;
+    position: relative;
+    display: block;
+    padding: 20px 8px !important;
+}
+
 li a.active {
-    background: #7d7d7d !important;
-    color: #fff !important;   
+    padding-bottom: auto;
+    padding-bottom: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    background: #f8f8f8 !important;
+    color: #2C6399 !important;   
 }
 
 #tab1 , #tab2 , #tab4 , #tab5 , #tab6 {
     font-family: Lato;
     color: black;
     font-size: 13px;
-    text-align: left;
     margin-left: auto;
-    padding-left: 2px !important;
+    padding-left: auto;
 }
 
 #tab1 , #tab2 , #tab4 , #tab5 , #tab6 > h4 {
@@ -338,19 +359,69 @@ li a.active {
 }
 
 button.accordion {
-    background-color: #eee;
-    color: #444;
-    cursor: pointer;
-    padding: 18px;
-    width: 100%;
-    border: none;
-    text-align: left;
-    outline: none;
-    font-size: 15px;
-    transition: 0.4s;
-    margin-top: 5px;
+    background-color: #DCE0E3 !important;
+    color: #444 !important;
+    cursor: pointer !important;
+    padding: 18px !important;
+    width: 100% !important;
+    border: none !important;
+    text-align: left !important;
+    outline: none !important;
+    font-size: 15px !important;
+    transition: 0.4s !important;
+    margin-top: 15px !important;
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
 }
 
+button.accordion:hover {
+    box-shadow: 2px 3px 5px rgba(0, 0, 0, .5);
+}
+
+#heading h1 {
+    margin: 0px !important;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: Quicksand;
+    float: left;
+    font-weight: bolder;
+    z-index: 10;
+    color: #001E4F;
+}
+
+#heading h2 {
+    margin: 0px !important;
+    font-family: Quicksand;
+    font-size: 16px;
+    float: left;
+    font-weight: bold;
+    z-index: 10;
+    color: #000;
+}
+
+#heading h3 {
+    margin: 0px !important;
+    font-family: Quicksand;
+    font-size: 14px;
+    float: left;
+    z-index: 10;
+}
+
+/*.accordion #heading {
+    margin: 0px !important;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: Quicksand;
+    float: left;
+}
+
+.accordion #dates {
+    margin: 0px;
+    font-family: Quicksand;
+    font-size: 15px;
+    width: 15%;
+    float: right;
+}
+*/
 button.accordion.active, button.accordion:hover {
     background-color: #ddd;
 }
@@ -360,8 +431,9 @@ button.accordion:after {
     font-size: 13px;
     color: #777;
     float: right;
-    margin-left: 5px;
+    z-index: 1;
 }
+
 
 button.accordion.active:after {
     content: "\2796";
@@ -374,6 +446,10 @@ div.panel {
     transition: 0.6s ease-in-out;
     opacity: 0;
     display: none;
+
+    font-family: Quicksand;
+    font-size: 15px;
+    color: #000;
 }
 
 div.panel.show {
