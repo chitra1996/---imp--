@@ -326,30 +326,93 @@ I also did a Motion and Time study of the quality and testing department of Gear
 	</div-->
 										<div class="tab" id="tab4">
 
-											<button class="accordion">
-													<p class="name">B.Tech</p>
-													<p class="place">Jaipur Ebgineering College & Research Centre</p>
-													<p class="date">2011 – 2015</p>
+											<button class="according">
+													<p class="namers">B.Tech</p>
 											</button>
 												<div id="foo" class="panel">
+													<h1 style="font-family:Quicksand; font-size:20px; color:#000; font-style:italic;">Jaipur Engineering Collage and Research Centre</h1>
+													<p>2011 – 2015</p>
+													<p>Rajasthan Technical University , Honours</p>	
+													<p>Aggregate percentage : 70.1%</p>												
+												</div>
+<!--
+IELTS - International English Language Testing System
+Score: 7.5 Band Overall
+December 2015
+-->
+											<button class="according">
+													<p class="namers">Courses and certification</p>
+											</button>
+												<div id="foo" class="panel">
+
+													<button class="accordions">
+															<p class="drops">Certified Solid Works Associate</p>
+													</button>
+														<div id="foo" class="panels">
+															<h1>Dassault Solidworks 2015</h1>
+															<h2>2015-present</h2>
+														</div>
+
+													<button class="accordions">
+															<p class="drops">CAD Professional</p>
+													</button>
+														<div id="foo" class="panels">
+															<h1>Certified Solidworks Training Centre</h1>
+															<h2>July 2015</h2>
+														</div>
+
+													<button class="accordions">
+															<p class="drops">Microsoft Certified Professional</p>
+													</button>
+														<div id="foo" class="panels">
+															<h1>Microsoft Corporation(Certiport)</h1>
+															<h1>Microsoft Office (2013) specialist and Microsoft Technology Associate (MTA) in Software Development Fundamentals.</h1>
+															<h2>2014-present</h2>
+														</div>
+
+													<button class="accordions">
+															<p class="drops">Robotics & Embedded Systems</p>
+													</button>
+														<div id="foo" class="panels">
+															<h1>Gridbots Technology Pvt. Ltd.</h1>
+															<h2>2011-2014</h2>
+														</div>
 												</div>
 
-											<button class="accordion">
-													<p class="name">Test Scores</p>
+											<button class="according">
+													<p class="namers">Test Scores</p>
 											</button>
 												<div id="foo" class="panel">
+													<h1 style="font-family:Quicksand; font-size:20px; color:#000; font-style:italic;">IELTS - International English Language Testing System</h1>
+													<p>Score: 7.5 Band Overall</p>
+													<p>December 2015</p>
 												</div>
 
-											<button class="accordion">
-													<p class="name">Courses and certification</p>
+											<button class="according">
+													<p class="namers">Schooling</p>
 											</button>
 												<div id="foo" class="panel">
-												</div>
 
-											<button class="accordion">
-													<p class="name">Schooling</p>
-											</button>
-												<div id="foo" class="panel">
+													<button class="accordions">
+															<p class="drops">Secondary</p>
+													</button>
+														<div id="foo" class="panels">
+															<p>Kendriya Vidhyalaya No.1,Vadodara</p>
+															<p>2007 – 2008</p>
+															<p>Central Board Of secondary Education(C.B.S.E.)</p>
+															<p>Secured 88.6%</p>
+														</div>
+
+													<button class="accordions">
+															<p class="drops">Seniour Secondary</p>
+													</button>
+														<div id="foo" class="panels">
+															<p>Kendriya Vidhyalaya No.1,Vadodara</p>
+															<p>2010 – 2011</p>
+															<p>Central Board Of secondary Education(C.B.S.E.)</p>
+															<p>(Physics, Chemistry, Math & Biology) Secured 86.2%</p>
+														</div>
+
 												</div>		
 
 										</div>
@@ -625,6 +688,25 @@ Physical Research Laboratory, Ahmedabad.
 			  }
 			}
 
+			var accs = document.getElementsByClassName("accordions");
+			var i;
+
+			for (i = 0; i < accs.length; i++) {
+			    accs[i].onclick = function(){
+			        this.classList.toggle("active");
+			        this.nextElementSibling.classList.toggle("show");
+			  }
+			}
+
+			var accing = document.getElementsByClassName("according");
+			var i;
+
+			for (i = 0; i < accing.length; i++) {
+			    accing[i].onclick = function(){
+			        this.classList.toggle("active");
+			        this.nextElementSibling.classList.toggle("show");
+			  }
+			}
 		</script>
 
 	</body>
