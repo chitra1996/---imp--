@@ -309,10 +309,8 @@ header , nav , aside , section , article , footer {
 
 #summary {
   font-size: 20px;
-  font-family: Quicksand;
+  font-family: Raleway;
   text-orientation: justify;
-  font-weight: bold;
-  font-style: italic;
   margin: auto;
   border-right: 1px solid black;
 }
@@ -450,6 +448,22 @@ button.according {
     background-color: #DCE0E3 !important;
     color: #444 !important;
     cursor: pointer !important;
+    padding: 18px !important;
+    width: 100% !important;
+    border: none !important;
+    text-align: left !important;
+    outline: none !important;
+    font-size: 15px !important;
+    transition: 0.4s !important;
+    margin-top: 8px !important;
+    margin-bottom: 7px;
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+}
+
+button.academics {
+    background-color: #DCE0E3 !important;
+    color: #444 !important;
+    cursor: pointer !important;
     padding: 10px !important;
     width: 100% !important;
     border: none !important;
@@ -573,23 +587,50 @@ button.accordion.active, button.accordion:hover {
     background-color: #ddd;
 }
 
-.name::after {
+button.accordion::after {
     float: right;
-    content: '\03009';
-    font-size: 50px;
-    color: #000;
-}
-
-.namers::after {
-    float: right;
-    content: '\03009';
+    margin-top: 13px;
+    content: '\02795';
     font-size: 30px;
     color: #000;
 }
 
-.drops::after {  
+button.accordion.active::after {
     float: right;
-    content: '\025BC';
+    margin-top: 13px;
+    content: '\02796';
+    font-size: 30px;
+    color: #000;
+}
+
+button.academics::after {
+    float: right;
+    margin-top:0px;
+    content: '\02795';
+    font-size: 30px;
+    color: #000;
+}
+
+button.academics.active::after {
+    float: right;
+    margin-top: 0px;
+    content: '\02796';
+    font-size: 30px;
+    color: #000;
+}
+
+button.accordions::after {  
+    float: right;
+    margin-top: 0px;
+    content: '\02795';
+    font-size: 15px;
+    color: #000;
+}
+
+button.accordions.active::after {
+    float: right;
+    margin-top: 0px;
+    content: '\02796';
     font-size: 15px;
     color: #000;
 }
