@@ -202,10 +202,6 @@ header , nav , aside , section , article , footer {
     padding-bottom: 15px;
 }
 
-.wraup {
-  margin-left: 10px !important;
-}
-
 #mainNavBarli {
   background-color: #ddd;
     display: block;
@@ -292,14 +288,19 @@ header , nav , aside , section , article , footer {
     }
 }
 
+.row {
+  margin-left: 0px !important;
+  margin-right: 0px !important;
+}
+
 .tab {
     height: 500px;
     width: auto;
     overflow: auto;
     display: none;
     background-color: #f8f8f8;
-    margin-left: 10px !important;
-    margin-right: 10px !important;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 #tab1 {
@@ -484,7 +485,7 @@ button.accordion:hover {
 .name {
     margin: 0px !important;
     font-size: 18px;
-    font-family: Quicksand;
+    font-family: Raleway;
     font-weight: bolder;
     color: #001E4F;
 }
@@ -492,7 +493,7 @@ button.accordion:hover {
 .names {
     margin: 0px !important;
     font-size: 18px;
-    font-family: Quicksand;
+    font-family: Raleway;
     font-weight: bolder;
     color: #001E4F;
 }
@@ -500,7 +501,7 @@ button.accordion:hover {
 .namers {
     margin: 0px !important;
     font-size: 25px;
-    font-family: Quicksand;
+    font-family: Raleway;
     font-weight: bolder;
     color: #001E4F;
 }
@@ -508,7 +509,7 @@ button.accordion:hover {
 .drops {
     margin: 0px !important;
     font-size: 13px;
-    font-family: Quicksand;
+    font-family: Raleway;
     font-weight: bolder;
     color: #001E4F;
 }
@@ -516,31 +517,24 @@ button.accordion:hover {
 .panel > h1,.panel > h2,.panel > h3 {
     margin: 0px !important;
     font-size: 22px;
-    font-family: Quicksand;
     color: #001E4F;
-    font-style: italic;
 }
 
 .panel p {
     margin: 0px !important;
     font-size: 17px;
-    font-family: Quicksand;
     color: #000;
-    font-style: italic;
 }
 
 .panels > h1,.panels > h2,.panels > h3{
     margin: 0px !important;
     font-size: 15px;
-    font-family: Quicksand;
     color: #000;
-    font-style: italic;
 }
 
 .panels p{
     margin: 0px !important;
     font-size: 15px;
-    font-family: Quicksand;
     color: #000;
 }
 
@@ -614,9 +608,8 @@ div.panel {
     opacity: 0;
     display: none;
 
-    font-family: Quicksand;
+    font-family: Raleway !important;
     font-size: 18px;
-    font-weight: bold;
     color: #000;
 }
 
@@ -628,9 +621,8 @@ div.panels {
     opacity: 0;
     display: none;
 
-    font-family: Quicksand;
+    font-family: Raleway !important;
     font-size: 18px;
-    font-weight: bold;
     color: #000;
 }
 
