@@ -310,9 +310,18 @@ header , nav , aside , section , article , footer {
 #summary {
   font-size: 20px;
   font-family: Raleway;
+  font-weight: lighter;
   text-orientation: justify;
+  padding-top: 30px;
   margin: auto;
-  border-right: 1px solid black;
+  /*border-right: 2px solid black;*/
+  border-right-style: groove;
+  display: inline;
+  height: 90%;
+}
+
+#skills {
+  border-bottom:2px solid grey;
 }
 
 #skills h1 {
@@ -333,23 +342,26 @@ header , nav , aside , section , article , footer {
   font-family: Quicksand;
 }
 
-.extralogos { 
+/*.extralogos { 
   position: absolute;
   bottom: -10%;
+}*/
+
+.extralogos {
+  vertical-align: bottom;
 }
 
 .extralogos img {  
-  filter: grayscale(0); /* Microsoft Edge and Firefox 35+ */
-  -webkit-filter: grayscale(0); /* Google Chrome, Safari 6+ & Opera 15+ */
+  filter: grayscale(1); /* Microsoft Edge and Firefox 35+ */
+  -webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
   height: 85px;
-  width: 22%;
+  width: 25%;
   float: left;
-  margin: 5px;
 }
 
 .extralogos img:hover {
-  filter: grayscale(1); /* Microsoft Edge and Firefox 35+ */
-  -webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
+  filter: grayscale(0); /* Microsoft Edge and Firefox 35+ */
+  -webkit-filter: grayscale(0); /* Google Chrome, Safari 6+ & Opera 15+ */
   border: 2px solid grey;
 }
 
@@ -373,29 +385,32 @@ li a.active {
     font-family: Lato;
     color: black;
     font-size: 13px;
-    margin-left: auto;
-    padding-left: auto;
+    margin-left: 15px !important;
+    margin-right: 15px !important;
 }
 
 #tab1 , #tab2 , #tab4 , #tab6 > h4 {
     font-family: Lato;
     color: black;
     font-size: 20px;    
-    margin-left: auto;
+    margin-left: 15px !important;
+    margin-right: 15px !important;
 }
 
 #tab1 , #tab2 , #tab4 , #tab6 > h5 {
     font-family: Lato;
     color: black;
     font-size: 18px;
-    margin-left: auto;
+    margin-left: 15px !important;
+    margin-right:15px !important;
 }
 
 #tab1 , #tab2 , #tab4 , #tab6 > h6 {
     font-family: Lato;
     color: black;
     font-size: 16px;i
-    margin-left: auto;
+    margin-left: 15px !important;
+    margin-right: 15px !important;
 }
 
 #tab5 h1 {
@@ -471,10 +486,12 @@ button.academics {
     outline: none !important;
     font-size: 15px !important;
     transition: 0.4s !important;
+    margin-left: auto;
+    margin-right: auto;
     margin-top: 8px !important;
     margin-bottom: 7px;
     box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
-}
+  }
 
 button.accordions {
     background-color: #DCE0E3 !important;
@@ -514,7 +531,8 @@ button.accordion:hover {
   
 .namers {
     margin: 0px !important;
-    font-size: 25px;
+    font-size: 18px;
+    padding-top: 3px;
     font-family: Raleway;
     font-weight: bolder;
     color: #001E4F;
@@ -591,32 +609,32 @@ button.accordion::after {
     float: right;
     margin-top: 13px;
     content: '\02795';
-    font-size: 30px;
-    color: #000;
+    font-size: 20px;
+    color: #b0b0b0;
 }
 
 button.accordion.active::after {
     float: right;
     margin-top: 13px;
     content: '\02796';
-    font-size: 30px;
-    color: #000;
+    font-size: 20px;
+    color: #b0b0b0;
 }
 
 button.academics::after {
     float: right;
     margin-top:0px;
     content: '\02795';
-    font-size: 30px;
-    color: #000;
+    font-size: 20px;
+    color: #b0b0b0;
 }
 
 button.academics.active::after {
     float: right;
     margin-top: 0px;
     content: '\02796';
-    font-size: 30px;
-    color: #000;
+    font-size: 20px;
+    color: #b0b0b0;
 }
 
 button.accordions::after {  
@@ -624,7 +642,7 @@ button.accordions::after {
     margin-top: 0px;
     content: '\02795';
     font-size: 15px;
-    color: #000;
+    color: #b0b0b0;
 }
 
 button.accordions.active::after {
@@ -632,7 +650,7 @@ button.accordions.active::after {
     margin-top: 0px;
     content: '\02796';
     font-size: 15px;
-    color: #000;
+    color: #b0b0b0;
 }
 /*
 button.accordion.active::after {
