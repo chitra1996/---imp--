@@ -314,32 +314,30 @@ header , nav , aside , section , article , footer {
   text-orientation: justify;
   padding-top: 30px;
   margin: auto;
-  /*border-right: 2px solid black;*/
+  border-right: 1px solid ;
   border-right-style: groove;
   display: inline;
-  height: 90%;
+  height: 100%;
 }
 
 #skills {
-  border-bottom:2px solid grey;
+  height: 100%;
 }
 
 #skills h1 {
   text-orientation: justify;
-  text-align: center;
-  font-style: italic;
+  text-align: left;
   font-weight: bold;
-  font-size: 25px;
-  font-family: Quicksand;
+  font-size: 15px;
+  font-family: Raleway;
 }
 
 #skills li {
   text-decoration: none;
-  text-align: center;
+  text-align: left;
   list-style: none;
-  font-size: 20px;
-  font-style: italic;
-  font-family: Quicksand;
+  font-size: 13px;
+  font-family: Raleway;
 }
 
 /*.extralogos { 
@@ -352,17 +350,18 @@ header , nav , aside , section , article , footer {
 }
 
 .extralogos img {  
+  display: block;
   filter: grayscale(1); /* Microsoft Edge and Firefox 35+ */
   -webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
-  height: 85px;
-  width: 25%;
+  height: 45px;
+  width: 45px;
   float: left;
 }
 
 .extralogos img:hover {
   filter: grayscale(0); /* Microsoft Edge and Firefox 35+ */
   -webkit-filter: grayscale(0); /* Google Chrome, Safari 6+ & Opera 15+ */
-  border: 2px solid grey;
+  border: .5px solid white;
 }
 
 .nav > li > a {
@@ -529,14 +528,14 @@ button.accordion:hover {
     color: #001E4F;
 }
   
-.namers {
+/*.namers {
     margin: 0px !important;
     font-size: 18px;
     padding-top: 3px;
     font-family: Raleway;
     font-weight: bolder;
     color: #001E4F;
-}
+}*/
 
 .drops {
     margin: 0px !important;
@@ -544,6 +543,10 @@ button.accordion:hover {
     font-family: Raleway;
     font-weight: bolder;
     color: #001E4F;
+}
+
+.panel {
+    margin-left: 25px;
 }
 
 .panel > h1,.panel > h2,.panel > h3 {
@@ -616,22 +619,6 @@ button.accordion::after {
 button.accordion.active::after {
     float: right;
     margin-top: 13px;
-    content: '\02796';
-    font-size: 20px;
-    color: #b0b0b0;
-}
-
-button.academics::after {
-    float: right;
-    margin-top:0px;
-    content: '\02795';
-    font-size: 20px;
-    color: #b0b0b0;
-}
-
-button.academics.active::after {
-    float: right;
-    margin-top: 0px;
     content: '\02796';
     font-size: 20px;
     color: #b0b0b0;
@@ -722,17 +709,29 @@ div.panels.show {
     border: 1px solid #ccc;
     float: left;
     width: 25%;
-    height: 350px;
+    height: 350px;    
+    z-index: 1;
 }
 
 .portfolio:hover {
+    z-index: 10;
+    color: #1d1d1d;
+    opacity: 0.9;
     border: 1px solid #777;
 }
 
 .portfolio img {
     width: 100%;
     height: auto;
+    z-index: 1;
 }
+
+.portfolio img:hover {
+    -webkit-transition-delay: 1s; /* Safari */
+    transition-delay: 1s;
+    -webkit-transform: rotateY(300deg); /* Safari */
+    transform: rotateY(300deg);
+    transition-timing-function: linear;
 
 .desc {
     padding: 15px;
