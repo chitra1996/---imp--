@@ -306,48 +306,55 @@ header , nav , aside , section , article , footer {
 #tab1 {
     display: block;
 }
-
+/*style="width:78%; padding-right:20px; display:block; float:left;" */
 #summary {
-  font-size: 20px;
+  font-size: 23px;
   font-family: Raleway;
-  font-weight: lighter;
-  text-orientation: justify;
+  display:block;  text-orientation: justify;
   padding-top: 30px;
   margin: auto;
   border-right: 1px solid ;
   border-right-style: groove;
-  display: inline;
   height: 100%;
+  padding-right: 20px !important;
+}
+
+.col-md-9 ,.col-ld-9 ,.col-sm-9 {
+  padding-right: 0px !important;
 }
 
 #skills {
   height: 100%;
+  padding-left: 20px !important;
+  display: block;
+  margin: auto;
 }
 
+.col-md-3 ,.col-ld-3 ,.col-sm-3 {
+  padding-left: 0px !important;
+}
 #skills h1 {
   text-orientation: justify;
   text-align: left;
-  font-weight: bold;
-  font-size: 15px;
-  font-family: Raleway;
+  font-weight: bolder;
+  font-size: 20px;
+  font-family: 'Muli', sans-serif;
 }
 
 #skills li {
   text-decoration: none;
   text-align: left;
   list-style: none;
-  font-size: 13px;
-  font-family: Raleway;
+  font-weight: lighter;
+  color: #47b403;
+  font-size: 17px;
+  font-family: 'Droid Serif' Serif;
 }
 
 /*.extralogos { 
   position: absolute;
   bottom: -10%;
 }*/
-
-.extralogos {
-  vertical-align: bottom;
-}
 
 .extralogos img {  
   display: block;
@@ -709,12 +716,10 @@ div.panels.show {
     border: 1px solid #ccc;
     float: left;
     width: 25%;
-    height: 350px;    
-    z-index: 1;
+    height: 350px;
 }
 
 .portfolio:hover {
-    z-index: 10;
     color: #1d1d1d;
     opacity: 0.9;
     border: 1px solid #777;
@@ -723,15 +728,7 @@ div.panels.show {
 .portfolio img {
     width: 100%;
     height: auto;
-    z-index: 1;
 }
-
-.portfolio img:hover {
-    -webkit-transition-delay: 1s; /* Safari */
-    transition-delay: 1s;
-    -webkit-transform: rotateY(300deg); /* Safari */
-    transform: rotateY(300deg);
-    transition-timing-function: linear;
 
 .desc {
     padding: 15px;
@@ -749,7 +746,6 @@ div.panels.show {
   display: block; 
   opacity: .99;
   background-color: #1d1d1d;
-  z-index: 1;
 }
 
 /*
@@ -769,7 +765,6 @@ div.panels.show {
   width: 50%;
   display: block; 
   opacity: 10 !important;  
-  z-index: 100000;
 }
 
 .close {
@@ -780,7 +775,6 @@ div.panels.show {
     height: 40px !important;
     width: 40px !important;
     opacity: 1 !important;
-    z-index: 100000;
 }
 
 .close img {
@@ -792,7 +786,6 @@ div.panels.show {
     height: 40px !important;
     width: 40px !important;
     opacity: 1 !important;
-    z-index: 100000;
 }
 
 #image1 , #image2 , #image3 , #image4 , #image5 , #image6 , #image7 , #image8 , #image9 , #image10 ,
