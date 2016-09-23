@@ -737,9 +737,7 @@ div.panels.show {
 }
 
 .portfolio:hover {
-    color: #1d1d1d;
-    opacity: 0.9;
-    border: 1px solid #777;
+  opacity: 0.5;
 }
 
 .portfolio img {
