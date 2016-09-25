@@ -369,7 +369,7 @@ header , nav , aside , section , article , footer {
 }*/
 
 .extralogos {
-  width: 90%;
+  width: 60%;
   clear: both;
   margin-left: auto;
   margin-right: auto;
@@ -383,7 +383,7 @@ header , nav , aside , section , article , footer {
 .extralogos img {  
   filter: grayscale(1); /* Microsoft Edge and Firefox 35+ */
   -webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
-  width: 24%;
+  width: 23.5%;
 }
 
 .extralogos img:hover {
@@ -742,7 +742,6 @@ div.panels.show {
 
 .portfolio:hover img, .portfolio:hover .desc{  
   visibility: hidden;
-  opacity: 1;
 }
 
 .read_more {
@@ -751,9 +750,9 @@ div.panels.show {
     margin-left: 0px;
     margin-right: 0px;
     display: none;
-    opacity: .5;
     background-color: #1d1d1d;font-size: 30px;
     font-family: Muli;
+    color: white !important;
     border: .5px solid black;
     text-align: center;
     padding-top: 140px;
@@ -771,7 +770,6 @@ div.panels.show {
 .portfolio img {
     width: 100%;
     height: auto;
-    z-index: -1;
 }
 
 .desc {
@@ -788,8 +786,13 @@ div.panels.show {
   margin-left: 0px;
   margin-right: 0px;
   display: block; 
-  opacity: .99;
-  background-color: #1d1d1d;
+  opacity: .985;
+  background-color: #15393c;
+}
+
+.images img {
+  z-index: 10;
+  opacity: 1 !important;
 }
 
 /*
