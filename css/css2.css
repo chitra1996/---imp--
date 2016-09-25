@@ -31,7 +31,8 @@ header , nav , aside , section , article , footer {
 
 #image {
     /*margin-left: 30px;*/
-    margin-top: 35px !important;
+    margin-top: 15px !important;
+    margin-bottom: 15px !important;
     margin: auto;
 }
 
@@ -174,6 +175,11 @@ header , nav , aside , section , article , footer {
     border-radius: 5px;
     padding: 7px 15px;
     font-family: Lato;
+}
+
+.cv:visited {
+  color: white;
+  text-decoration: none !important;
 }
 
 .cv:hover {
@@ -747,7 +753,7 @@ div.panels.show {
     margin-left: 0px;
     margin-right: 0px;
     display: none;
-    opacity: .8;
+    opacity: .5;
     background-color: #1d1d1d;font-size: 30px;
     font-family: Muli;
     border: .5px solid black;
@@ -761,6 +767,7 @@ div.panels.show {
 
 .portfolio:hover .read_more {
   display: block;
+  opacity: .5;
 }
 
 .portfolio img {
